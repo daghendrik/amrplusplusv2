@@ -1,0 +1,71 @@
+# Project information
+site_name: AmrPlusPlus 2.0 Docs
+
+# Copyright
+copyright: '&copy; Copyright Microbial Ecology Group.'
+
+# Configuration 
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  features:    
+    - navigation.instant
+    - header.autohide
+    # Comment out the lines below to use default layout
+    # - navigation.tabs
+    # - navigation.sections
+    # - navigation.expand
+    # - toc.integrate
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# Extensions
+markdown_extensions:
+  - tables
+  - footnotes
+  - admonition
+  - attr_list
+  - md_in_html
+  - abbr
+  - attr_list  
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# Page Tree
+nav:
+  - 🔗 MEGARes: https://megares.meglab.org/
+  - 🔗 Microbial Ecology Group: https://meg.colostate.edu/
+  - Introduction: index.md
+  - References: references.md
+  - Citing AMR++: citing.md
+  - Accessing AMR Plus Plus v2.0: accessing_AMR.md
+  - Installation: installation.md
+  - Usage: usage.md 
+  - Output: output.md  
+  - Dependencies: dependencies.md
+  - Software Requirements: requirements.md
+  - FAQ: FAQs.md
+  - Contact: contact.md
+  - AmrPlusPlus v1: https://megares.meglab.org/
+
